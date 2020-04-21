@@ -1,15 +1,29 @@
 
-/**
- * Description : Modifiying to return the integer value
- * Author : Siva Charan
- * email : siva3060@gamil.com
- *
- */
+//Description : Centigrade to Fahrenheit Conversion
+// save each step of conversion and expect the values 
+//Author :  Siva Charan
+//email : siva3060@gmail.com
 
-val cent : Double = 35.5
+val cent : Float = 45
 
-// we will use the "toType" build-in conversion values to convert the given type into 
-// target type
-val fah : Int = (cent * (9/5) + 32).toInt
+//float exprected 
+val step1 = 9/5
+println("Expected : Int  Generated : "+step1.getClass)
 
-println(s"Fahrenheit value if $fah")
+
+//float exprected 
+val step2 = cent * step1
+println("Expected : Float Generated : "+step2.getClass)
+
+//float  exprected 
+
+val step3 = step2 + 32
+println("Expected : Float Generated : "+step3.getClass)
+
+//converting the float type into int type
+//using the type conversion operators
+
+val farnh = step3.toInt
+
+println(s"Centigrade : $cent\n Step1 : $step1\n Step2 : $step2\n Fahrenheit : $farnh")
+
