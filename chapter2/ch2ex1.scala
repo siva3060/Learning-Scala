@@ -7,12 +7,12 @@
 val cent : Float = 45
 
 //float exprected 
-val step1 = 9/5
-println("Expected : Int  Generated : "+step1.getClass)
+val step1 = cent * 9
+println("Expected : Float  Generated : "+step1.getClass)
 
 
 //float exprected 
-val step2 = cent * step1
+val step2 =  step1 / 5
 println("Expected : Float Generated : "+step2.getClass)
 
 //float  exprected 
